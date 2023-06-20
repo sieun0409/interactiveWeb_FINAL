@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'br b';
+    src: url('배스킨라빈스\ B.ttf');
+}
+
+@font-face {
+    font-family: 'br r';
+    src: url('배스킨라빈스\ R.ttf');
+}
+
+@font-face {
+    font-family: 'nanum';
+    src: url('나눔손글씨\ 힘내라는\ 말보단.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3700px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    width:100%;
+    height:130px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+
+    transition:all 0.3s ease-in-out;
+
+    .logo{
+        transition:all 0.3s ease-in-out; 
+    }
+}
+
+header.scrolled {
+    height:70px;
+    background-color: white;
+    box-shadow : 0 4px 4px -4px rgba(0,0,0,0.3);
+
+    .logo{
+        margin-top: -75px;
+        transition:all 0.3s ease-in-out;
+    }
+}
+
+.logo img {
+    width:5%;
+    margin-top: 5px;
+}
+
+header a{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color:#DC61A5;
+    position: relative;
+    padding: 10px 12px;
+}
+
+header a:not(:last-of-type) {
+    margin-right: 100px;
+}
+
+header a::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height:3px;
+    background-color: #0061AA;
+    transition: all 0.3s ease-out;
+}
+
+header a:hover::after {
+    width:100%;
+}
+
+.wrap {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 120px;
+}
+
+footer {
+    width:100%;
+    height:160px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+footer hr {
+    margin-bottom: 30px;
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo2 img {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    font-weight: 400;
+    color:#6A6A6A;
+    width:750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-weight: 400;
+    color:#C9C9C9;
+    font-size: 12px;
+}
+
+.banner video{
+    width:100%;
+    margin-top: 150px;
+}
+
+.chicago {
+    height: 1080px;
+    background-color: #5a0009;
+    margin-top: -20px;
+}
+
+.ice1 {
+    text-align: center;
+}
+
+.ice1 img {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.ice2 {
+    position: absolute;
+    left: 51%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+  }
+
+.ice2 img {
+    width: 95%;
+    margin-top: 430px;
+
+}
+
+.text1 {
+    position: relative;
+    text-align: center;
+}
+
+.text1 img{
+    width:50%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.text1 img:hover {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.chicago h2 {
+    font-family: 'nanum';
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.pop1 img {
+    width:25%;
+    margin-top: 40%;
+}
+
+.pop1 {
+    position: absolute;
+    left: 25%;
+    font-size: 5em;
+    animation: motion1 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion1 {
+	0% {margin-top: 0px;}
+	100% {margin-top: 15px;}
+  }
+
+.pop2 img {
+    width:20%;
+    margin-top: 40%;
+}
+
+.pop2 {
+    position: absolute;
+    left: 80%;
+    font-size: 5em;
+    animation: motion2 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion2 {
+	100% {margin-top: -15px;}
+	0% {margin-top: 0px;}
+  }
+
+.pop3 img {
+    width:15%;
+    margin-top: 110%;
+}
+
+.pop3 {
+    position: absolute;
+    left: 15%;
+    font-size: 5em;
+    animation: motion2 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion2 {
+	100% {margin-top: -15px;}
+	0% {margin-top: 0px;}
+  }
+
+
+.pop4 img {
+    width:25%;
+    margin-top: -70%;
+}
+
+.pop4 {
+    position: absolute;
+    left: 5%;
+    font-size: 5em;
+    animation: motion2 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion2 {
+	100% {margin-top: -15px;}
+	0% {margin-top: 0px;}
+  }
+
+.pop5 img {
+    width:35%;
+    margin-top: 50%;
+}
+
+.pop5 {
+    position: absolute;
+    left: 70%;
+    font-size: 5em;
+    animation: motion1 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion1 {
+	0% {margin-top: 0px;}
+	100% {margin-top: 15px;}
+  }
+
+.pop6 img {
+    width:25%;
+    margin-top: 130%;
+}
+
+.pop6 {
+    position: absolute;
+    left: 70%;
+    font-size: 5em;
+    animation: motion2 0.7s
+               linear 0s
+               infinite alternate;
+}
+  @keyframes motion2 {
+	100% {margin-top: -15px;}
+	0% {margin-top: 0px;}
+  }
+
+.img {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1.0s ease, transform 1.0s ease-out;
+}
+
+.img.scrolled{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new .background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("back2.png");
+    min-height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.month {
+    text-align: center;
+}
+
+.month h2 {
+    color:#fff;
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.month p {
+    color:#fff;
+    padding-top: 40px;
+}
+
+.month1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.one {
+    width: 330px;
+    height:420px;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+
+.one img {
+    width: 70%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.one h3 {
+    text-align: center;
+    padding-top: 50px;
+    font-size:28px;
+}
+
+.one hr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+.two {
+    width: 330px;
+    height:420px;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+
+.two img {
+    width: 80%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.two h3 {
+    text-align: center;
+    padding-top: 30px;
+    font-size:28px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+.two hr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+.three {
+    width: 330px;
+    height:420px;
+    background-color: #fff;
+    border-radius: 18px;
+    margin-right: 20px;
+}
+
+.three img {
+    width: 80%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.three h3 {
+    text-align: center;
+    padding-top: 30px;
+    font-size:28px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+.three hr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+.de {
+    text-align: center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
+}
+
+.title.middle {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.title img {
+    width: 10%;
+}
+
+.title h2 {
+    font-family: 'br r';
+    color:#DC61A5;
+    margin-left: 20px;
+    margin-top: 90px;
+    font-size: 32px;
+}
+
+.option {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.op1{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
+}
+
+.op1 a {
+    padding-bottom: 10px;
+}
+
+.op1.middle{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.happy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.happy img {
+    width: 90%;
+}
+
+.happy p {
+    width:200px;
+}
+
+.kakao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kakao img {
+    width: 90%;
+}
+
+.kakao p {
+    width:220px;
+}
+
+.ygy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ygy img {
+    width: 90%;
+}
+
+.ygy p {
+    width:220px;
+    margin-bottom: 24px;
+}
+
+.bm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bm img {
+    width: 90%;
+}
+
+.bm p {
+    width:170px;
+}
